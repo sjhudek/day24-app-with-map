@@ -1,0 +1,24 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+<p>
+  <div id="map">
+    <img v-on:click="addMarker($event)" width=100% src="images/open-space-map-page-001.jpg">
+    <div class="pin bounce" v-on:click="removeMarker(index)" v-for="(mark, index) in markers" v-bind:style="{left:mark.lat, top:mark.lng}"></div>
+    <div class="pulse"></div>
+    <h1>
+  </h1>
+ </div>
+</p>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src=./main.js></script>
+</div>
+  </body>
+  </html>
